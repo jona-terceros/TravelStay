@@ -72,3 +72,22 @@ footer {
     text-align: center; /* Alineación del texto en el centro */
     padding: 10px; /* Espaciado interno del pie de página */
 }
+
+
+.carousel-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
