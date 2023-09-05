@@ -6,8 +6,6 @@
     <title>TravelStay</title>
     <link rel="stylesheet" href="style.css"> <!-- Enlaza tu archivo CSS aquí -->
     <link rel="icon" href="img/logo_pag.png">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script> -->
 </head>
 <body>
 
@@ -18,7 +16,7 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#alojamientos-section">Tipos de Alojamiento</a></li>
                 <li><a href="#destinos-section">Destinos</a></li>
-                <li><a href="#">Recomendaciones</a></li>
+                <li><a href="#vehiculos-section">Vehiculos</a></li>
                 <li><a href="avisos.html">Avisos legales</a></li>
             </ul>
         </nav>
@@ -42,7 +40,7 @@
     <main>
 
         <section id="alojamientos-section" class="Alojamientos">
-            <h2>Tipos de Alojamientos</h2>
+            <h2 class="seccion-titulo">Tipos de Alojamientos</h2>
             <div class="row">
                 <div class="column">
                     <h2>Hoteles</h2>
@@ -99,23 +97,85 @@
 
     </main>
     <main>
-
         <section id="destinos-section" class="Destinos">
-            <h2>Destinos</h2>
+            <h2 class="seccion-titulo2">Destinos</h2>
             <div class="destinos-container">
-                <img src="img/hostales.jpeg" alt="Cochabamba">
-                <img src="img/santacruz.jpg" alt="Santa Cruz">
-                <img src="img/lapaz.jpg" alt="La Paz">
-                <img src="img/sucre.jpg" alt="Sucre">
-                <img src="img/salaruyuni.jpg" alt="uyuni">
+                <div class="imagen-con-texto">
+                    <img src="img/cbba.jpg" alt="Cochabamba">
+                    <div class="overlay">
+                        <span class="texto">Cochabamba</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/santacruz.jpg" alt="Santa Cruz">
+                    <div class="overlay">
+                        <span class="texto">Santa Cruz</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/lapaz.jpg" alt="La Paz">
+                    <div class="overlay">
+                        <span class="texto">La Paz</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/sucre.jpg" alt="Sucre">
+                    <div class="overlay">
+                        <span class="texto">Sucre</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/salaruyuni.jpg" alt="Uyuni">
+                    <div class="overlay">
+                        <span class="texto">Uyuni</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     
     <main>
+        <section id="vehiculos-section" class="Destinos">
+            <h2 class="seccion-titulo2">Alquiler de Vehiculos</h2>
+            <div class="destinos-container">
+                <div class="imagen-con-texto">
+                    <img src="img/mini.webp" alt="Cochabamba">
+                    <div class="overlay">
+                        <span class="texto">Mini Cooper</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/celerio.jpg" alt="Santa Cruz">
+                    <div class="overlay">
+                        <span class="texto">Suzuki Celerio</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/suv.jpg" alt="La Paz">
+                    <div class="overlay">
+                        <span class="texto">SUV</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/tucson.jpg" alt="Sucre">
+                    <div class="overlay">
+                        <span class="texto">Hyundai Tucson</span>
+                    </div>
+                </div>
+                <div class="imagen-con-texto">
+                    <img src="img/Toyota RAV4 PHEV 007_wqi243.webp" alt="Uyuni">
+                    <div class="overlay">
+                        <span class="texto">Toyota RAV4</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
 
         <section class="vuelo">
             <h2>Planea tu Vuelo</h2>
+            <img src="img/plane.gif" alt="plane">
             <form action="/procesar_vuelo" method="post">
                 <label for="origen">Origen:</label>
                 <input type="text" id="origen" name="origen" required>
