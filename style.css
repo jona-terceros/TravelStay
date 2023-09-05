@@ -9,12 +9,20 @@ body {
 header {
     background-color: rgba(51, 51, 51, 0.5); /* Color de fondo transparente con alfa */
     color: #fff; /* Color del texto en el encabezado */
-    padding: 20px; /* Espaciado interno del encabezado */
+    padding: 30px; /* Espaciado interno del encabezado */
     text-align: center; /* Alineación del texto en el centro */
     position: fixed; /* Fija el encabezado en la parte superior */
     width: 100%;
     transition: background-color 0.3s; /* Transición suave para el fondo */
     z-index: 1000; /* Asegura que el encabezado esté en la parte superior */
+}
+header img {
+    width: 130px; /* Ajusta el ancho de la imagen según lo necesites */
+    height: 105px; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    position: absolute; /* Posición absoluta para que se superponga al encabezado */
+    top: 2px; /* Ajusta la distancia superior según sea necesario */
+    left: 50px; /* Ajusta la distancia izquierda según sea necesario */
+    z-index: 1001; /* Asegura que el logo esté sobre el encabezado */
 }
 header.navbar-scrolled {
     background-color: #333; /* Color de fondo sólido al hacer scroll */
