@@ -16,7 +16,7 @@
                 <li><a href="#">Tipos de Alojamiento</a></li>
                 <li><a href="#">Destinos</a></li>
                 <li><a href="#">Recomendaciones</a></li>
-                <li><a href="#">Avisos legales</a></li>
+                <li><a href="avisos.html">Avisos legales</a></li>
             </ul>
         </nav>
     </header>
@@ -28,22 +28,128 @@
             <img src="/img/hotel.jpeg" alt="Imagen 3">
             <!-- Agrega más imágenes según sea necesario -->
         </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">&#10094; </button>
+        <button class="carousel-btn next" onclick="nextSlide()"> &#10095;</button>
     </div>
 
     <main>
 
         <section class="Alojamientos">
             <h2>Tipos de Alojamientos</h2>
-           
-          
-            </form>
+            <div class="row">
+                <div class="column">
+                    <h2>Hoteles</h2>
+                    <img src="img/hoteles.webp" alt="hoteles">
+                    <p>Encuentra alojamientos variados y convenientes en todo el mundo.</p> 
+                </div>
+                <div class="column">
+                    <h2>Apartamentos</h2>
+                    <img src="img/apartamentos.jpeg" alt="apartamentos">
+                    <p>Disfruta de la independencia en alojamientos con cocina.</p>
+                </div>
+                <div class="column">
+                    <h2>Resorts</h2>
+                    <img src="img/resorts.jpeg" alt="resorts">
+                    <p>Sumérgete en el lujo y la relajación de destinos exclusivos.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h2>Villas</h2>
+                    <img src="img/villas.jpeg" alt="villas">
+                    <p>Experimenta la privacidad y el encanto en tu propio espacio.</p>
+                </div>
+                <div class="column">
+                    <h2>Cabañas</h2>
+                    <img src="img/cabanias.jpeg" alt="cabanias">
+                    <p>Conéctate con la naturaleza en alojamientos acogedores.</p>
+                </div>
+                <div class="column">
+                    <h2>Hostales</h2>
+                    <img src="img/hostales.jpeg" alt="hostales">
+                    <p>Opta por alojamiento económico y social en tu viaje.</p>
+                </div>
+            </div>
         </section>
+        
 
     </main>
+    <main>
+
+        <section class="Destinos">
+            <h2>Destinos</h2>
+            <div class="destinos-container">
+                <img src="img/hostales.jpeg" alt="Cochabamba">
+                <img src="img/santacruz.jpg" alt="Santa Cruz">
+                <img src="img/lapaz.jpg" alt="La Paz">
+                <img src="img/sucre.jpg" alt="Sucre">
+                <img src="img/salaruyuni.jpg" alt="uyuni">
+            </div>
+        </section>
+    </main>
     
+    <main>
+
+        <section class="vuelo">
+            <h2>Planea tu Vuelo</h2>
+            <form action="/procesar_vuelo" method="post">
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" name="origen" required>
+                
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" required>
+                
+                <label for="fecha">Fecha de Salida:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="pasajeros">Número de Pasajeros:</label>
+                <input type="number" id="pasajeros" name="pasajeros" min="1" required>
+                
+                <label for="clase">Clase:</label>
+                <select id="clase" name="clase">
+                    <option value="economica">Económica</option>
+                    <option value="negocios">Negocios</option>
+                    <option value="primera">Primera Clase</option>
+                </select>
+                
+                <input type="submit" value="Buscar Vuelos">
+            </form>
+        </section>
+        
+
+    </main>
 
     <footer>
         <p>&copy; TravelStay Todos los derechos Reservados</p>
     </footer>
+
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Mostrar la primera imagen al cargar la página
+        showSlide(currentIndex);
+    </script>
 </body>
 </html>
