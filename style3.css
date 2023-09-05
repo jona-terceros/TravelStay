@@ -1,10 +1,8 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-   
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif; /* Tipo de fuente principal */
+
 }
 
 header {
@@ -16,9 +14,6 @@ header {
     width: 100%;
     transition: background-color 0.3s; /* Transición suave para el fondo */
     z-index: 1000; /* Asegura que el encabezado esté en la parte superior */
-    top: 0;
-    left: 0;
-    right: 0;
 }
 header img {
     width: 130px; /* Ajusta el ancho de la imagen según lo necesites */
@@ -51,62 +46,43 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline; /* Subrayado en el hover de los enlaces */
 }
-
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    max-width: 800px;
-    margin: 0 auto;
+.hotel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
+    padding-top: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hotel {
     background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-#inicio{
-    margin-top: 140px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
 }
 
-h2 {
+.hotel img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.hotel-name {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.hotel-price {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.hotel-stars {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+    color: #f39c12;
+    margin: 10px 0;
 }
-
-p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-/* Estilos para el pie de página */
-footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #fff; /* Color del texto en el pie de página */
-    text-align: center; /* Alineación del texto en el centro */
-    padding: 10px; /* Espaciado interno del pie de página */
-}
-
-footer img {
-    width: 200px; /* Ajusta el ancho de la imagen según lo necesites */
-    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-    display: block; /* Convierte la imagen en un bloque para centrarla horizontalmente */
-    margin: 0 auto; /* Centra la imagen horizontalmente en el footer */
-}
-
-
-

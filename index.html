@@ -29,6 +29,10 @@
             <img src="/img/habitacion.jpeg" alt="Imagen 1">
             <img src="/img/piscina.jpeg" alt="Imagen 2">
             <img src="/img/hotel.jpeg" alt="Imagen 3">
+            <img src="/img/fotosanta.jpg" alt="Imagen 4">
+            <img src="/img/yungas-04.jpg" alt="Imagen 5">
+            <img src="/img/cristo.webp" alt="Imagen 6">
+            <img src="/img/salar.webp" alt="Imagen 7">
             <!-- Agrega más imágenes según sea necesario -->
         </div>
         <button class="carousel-btn prev" onclick="prevSlide()">&#10094; </button>
@@ -42,34 +46,51 @@
             <div class="row">
                 <div class="column">
                     <h2>Hoteles</h2>
-                    <img src="img/hoteles.webp" alt="hoteles">
+                    <a href="hoteles.html" target="_blank">
+                        <img src="img/hoteles.webp" alt="Hoteles">
+                      </a>
                     <p>Encuentra alojamientos variados y convenientes en todo el mundo.</p> 
                 </div>
                 <div class="column">
                     <h2>Apartamentos</h2>
-                    <img src="img/apartamentos.jpeg" alt="apartamentos">
+                  
+                    <a href="apartament.html" target="_blank">
+                        <img src="img/apartamentos.jpeg" alt="Apartamentos">
+                      </a>
                     <p>Disfruta de la independencia en alojamientos con cocina.</p>
                 </div>
                 <div class="column">
                     <h2>Resorts</h2>
-                    <img src="img/resorts.jpeg" alt="resorts">
+                   
+                    <a href="resort.html" target="_blank">
+                        <img src="img/resorts.jpeg" alt="resorts">
+                      </a>
                     <p>Sumérgete en el lujo y la relajación de destinos exclusivos.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <h2>Villas</h2>
-                    <img src="img/villas.jpeg" alt="villas">
+                 
+                    <a href="villas.html" target="_blank">
+                        <img src="img/villas.jpeg" alt="villas">
+                      </a>
                     <p>Experimenta la privacidad y el encanto en tu propio espacio.</p>
                 </div>
                 <div class="column">
                     <h2>Cabañas</h2>
-                    <img src="img/cabanias.jpeg" alt="cabanias">
+                   
+                    <a href="cabanias.html" target="_blank">
+                        <img src="img/cabanias.jpeg" alt="cabanias">
+                      </a>
                     <p>Conéctate con la naturaleza en alojamientos acogedores.</p>
                 </div>
                 <div class="column">
                     <h2>Hostales</h2>
-                    <img src="img/hostales.jpeg" alt="hostales">
+                  
+                    <a href="hostal.html" target="_blank">
+                        <img src="img/hostales.jpeg" alt="hostales">
+                      </a>
                     <p>Opta por alojamiento económico y social en tu viaje.</p>
                 </div>
             </div>
@@ -123,12 +144,14 @@
     </main>
 
     <footer>
-        <p>&copy; TravelStay Todos los derechos Reservados</p>
+        <img src="img/logoescrito-removebg-preview.png" alt="Logo escrito">
+        <p>&copy; TravelStay Todos los derechos Reservados ©</p>
     </footer>
 
 
     <script>
         let currentIndex = 0;
+        
         const slides = document.querySelectorAll('.carousel img');
         
         function showSlide(index) {
@@ -154,5 +177,31 @@
         // Mostrar la primera imagen al cargar la página
         showSlide(currentIndex);
     </script>
+
+    <script>
+        let currentSlide = 0;
+        const slides2 = document.querySelectorAll('.carousel img');
+        
+        function nextSlide() {
+            slides2[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide + 1) % slides2.length;
+            slides2[currentSlide].style.display = 'block';
+        }
+        
+        function prevSlide() {
+            slides2[currentSlide].style.display = 'none';
+            currentSlide = (currentSlide - 1 + slides2.length) % slides2.length;
+            slides2[currentSlide].style.display = 'block';
+        }
+
+        function autoSlide() {
+            nextSlide();
+        }
+
+        // Iniciar el carrusel automático cada 3 segundos
+        setInterval(autoSlide, 3000);
+    </script>
+
+
 </body>
 </html>
