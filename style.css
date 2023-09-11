@@ -153,6 +153,13 @@ footer img {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
+.seccion-titulo2{
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
 
 .row {
     display: flex;

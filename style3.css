@@ -86,3 +86,142 @@ header nav ul li a:hover {
     color: #f39c12;
     margin: 10px 0;
 }
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    /* Estilos para el encabezado en dispositivos móviles */
+    header {
+        padding: 20px; /* Reduce el espaciado en dispositivos móviles */
+    }
+
+    /* Estilos para la barra de navegación en dispositivos móviles */
+    header nav ul li {
+        margin-right: 10px; /* Reduce el margen entre elementos de la lista */
+    }
+
+    /* Estilos para la sección de búsqueda en dispositivos móviles */
+    .search {
+        max-width: 100%; /* Ancho máximo del 100% en dispositivos móviles */
+    }
+
+    /* Estilos para el pie de página en dispositivos móviles */
+    footer {
+        background-color: #333; /* Color de fondo del pie de página */
+        color: #fff; /* Color del texto en el pie de página */
+        text-align: center; /* Alineación del texto en el centro */
+        padding: 10px; /* Espaciado interno del pie de página */
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno en el ancho total */
+    }
+
+    footer img {
+        width: 150px; /* Ajusta el ancho de la imagen en dispositivos móviles */
+    }
+
+    /* Estilos para el carrusel en dispositivos móviles */
+    .carousel img {
+        width: 100%;
+        max-width: 100%; /* Establece un ancho máximo */
+        height: auto;
+    }
+    
+    .carousel-container {
+        position: relative;
+        width: 100%; /* Ancho total de la pantalla */
+        overflow: hidden;
+    }
+
+    .row {
+        display: block; /* Cambia a una disposición de bloques en dispositivos móviles */
+    }
+
+    .column {
+        width: 280px; /* Ancho completo en dispositivos móviles */
+        margin-bottom: 20px; /* Espaciado inferior entre elementos en dispositivos móviles */
+    
+    }
+ 
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: rgba(51, 51, 51, 0.5); /* Color de fondo transparente con alfa */
+        color: #fff; /* Color del texto en el encabezado */
+        padding: 30px; /* Espaciado interno del encabezado */
+        text-align: center; /* Alineación del texto en el centro */
+        position: fixed; /* Fija el encabezado en la parte superior */
+        width: 100%;
+        height: 25px;
+        transition: background-color 0.3s; /* Transición suave para el fondo */
+        z-index: 1000; /* Asegura que el encabezado esté en la parte superior */
+        display: flex;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    header img {
+        max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+        max-height: 100%; /* La imagen se ajustará al alto del contenedor */
+        width: 90px; /* Anula el ancho fijo para permitir la adaptación */
+        height: 80px; /* Anula la altura fija para permitir la adaptación */
+    }
+  
+    .menu ul {
+        background-color:rgba(0, 0, 0, 0.2) ;
+        margin-top: 230px;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-left: -60px;
+        width: 200px;
+      
+    }
+    
+    .menu li {
+        display: block;
+        margin: 10px 0; /* Espacio vertical entre elementos */
+        
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+
+    }
+    .hidden {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end; /* Esto alinea el contenido a la derecha */
+        align-items: center; /* Esto alinea el contenido verticalmente al centro */
+    }
+      
+    
+    #mobile-menu-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        padding: 0;
+        display: block;
+        margin-left: auto; /* Mueve el botón a la derecha */
+    }
+    
+    
+    
+    .vuelo{
+        width: 200px;
+    }
+
+}
+/* Estilos para el menú en dispositivos de escritorio */
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none; /* Ocultar el menú móvil en dispositivos de escritorio */
+    }
+
+    .menu {
+        display: block; /* Mostrar el menú de escritorio */
+    }
+}
