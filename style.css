@@ -145,40 +145,46 @@ footer img {
     text-align: center;
     padding: 20px;
 }
-h2 {
-    font-size: 36px; /* Tamaño de fuente más grande */
-    color: #333; /* Cambio de color del texto */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    margin-bottom: 20px; /* Espacio inferior adicional */
+
+.seccion-titulo {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
+
 .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
 .column {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transiciones suaves en hover */
-    width: 300px; /* Ancho fijo para todas las columnas */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    flex: 1;
+    max-width: 300px;
+    width: 100%;
+    min-width: 280px; /* Ancho mínimo para evitar columnas muy estrechas */
+    margin: 0 auto; /* Centra horizontalmente */
 }
 
 .column:hover {
-    transform: translateY(-5px); /* Levanta el cuadro al pasar el mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .column img {
     max-width: 100%;
-    width: 100%;
-    height: 200px; /* Altura fija para todas las imágenes */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 1px solid transparent; /* Borde sin puntas */
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid transparent;
 }
 
 .column h2 {
@@ -363,7 +369,12 @@ input[type="submit"]:hover {
 
     /* Estilos para el pie de página en dispositivos móviles */
     footer {
-        padding: 5px; /* Reduce el espaciado en dispositivos móviles */
+        background-color: #333; /* Color de fondo del pie de página */
+        color: #fff; /* Color del texto en el pie de página */
+        text-align: center; /* Alineación del texto en el centro */
+        padding: 10px; /* Espaciado interno del pie de página */
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        box-sizing: border-box; /* Incluye el relleno en el ancho total */
     }
 
     footer img {
@@ -372,13 +383,15 @@ input[type="submit"]:hover {
 
     /* Estilos para el carrusel en dispositivos móviles */
     .carousel img {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        width: 100%;
+        max-width: 100%; /* Establece un ancho máximo */
+        height: auto;
     }
-  
-
-    /* Estilos para la sección de alojamientos en dispositivos móviles */
-    .Alojamientos {
-        padding: 10px; /* Reduce el espaciado en dispositivos móviles */
+    
+    .carousel-container {
+        position: relative;
+        width: 100%; /* Ancho total de la pantalla */
+        overflow: hidden;
     }
 
     .row {
@@ -386,39 +399,12 @@ input[type="submit"]:hover {
     }
 
     .column {
-        width: 100%; /* Ancho completo en dispositivos móviles */
+        width: 280px; /* Ancho completo en dispositivos móviles */
         margin-bottom: 20px; /* Espaciado inferior entre elementos en dispositivos móviles */
+    
     }
-    .mobile-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
+ 
 
-    #mobile-menu-toggle {
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
-    }
-
-    nav {
-        display: none; /* Oculta el menú principal en dispositivos móviles */
-    }
-
-    nav.active {
-        display: block; /* Muestra el menú principal cuando está activo */
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    li {
-        margin: 5px 0;
-    }
     /* Estilos para el encabezado */
     header {
         background-color: rgba(51, 51, 51, 0.5); /* Color de fondo transparente con alfa */
@@ -427,6 +413,7 @@ input[type="submit"]:hover {
         text-align: center; /* Alineación del texto en el centro */
         position: fixed; /* Fija el encabezado en la parte superior */
         width: 100%;
+        height: 25px;
         transition: background-color 0.3s; /* Transición suave para el fondo */
         z-index: 1000; /* Asegura que el encabezado esté en la parte superior */
         display: flex;
@@ -435,8 +422,71 @@ input[type="submit"]:hover {
     }
 
     header img {
-        width: 130px; /* Ajusta el ancho de la imagen según lo necesites */
-        height: 90px; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+        max-height: 100%; /* La imagen se ajustará al alto del contenedor */
+        width: 90px; /* Anula el ancho fijo para permitir la adaptación */
+        height: 80px; /* Anula la altura fija para permitir la adaptación */
+    }
+  
+    .menu ul {
+        background-color:rgba(0, 0, 0, 0.2) ;
+        margin-top: 230px;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-left: -60px;
+        width: 200px;
+      
+    }
+    
+    .menu li {
+        display: block;
+        margin: 10px 0; /* Espacio vertical entre elementos */
+        
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+
+    }
+    .hidden {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end; /* Esto alinea el contenido a la derecha */
+        align-items: center; /* Esto alinea el contenido verticalmente al centro */
+    }
+      
+    
+    #mobile-menu-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        padding: 0;
+        display: block;
+        margin-left: auto; /* Mueve el botón a la derecha */
+    }
+    
+    
+    
+    .vuelo{
+        width: 200px;
     }
 
 }
+/* Estilos para el menú en dispositivos de escritorio */
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none; /* Ocultar el menú móvil en dispositivos de escritorio */
+    }
+
+    .menu {
+        display: block; /* Mostrar el menú de escritorio */
+    }
+}
+
