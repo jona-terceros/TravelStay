@@ -14,7 +14,7 @@
         <div class="mobile-menu">
             <button id="mobile-menu-toggle">&#9776;</button>
         </div>
-        <nav class="menu">
+        <nav class="menu hidden">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#alojamientos-section">Tipos de Alojamiento</a></li>
@@ -270,9 +270,7 @@
                 const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
                 const menu = document.querySelector('.menu');
         
-    
                 mobileMenuToggle.addEventListener('click', function () {
-                    menu.classList.toggle('menu');
                     menu.classList.toggle('hidden');
                 });
             });

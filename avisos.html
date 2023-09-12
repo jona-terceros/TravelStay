@@ -12,7 +12,7 @@
         <div class="mobile-menu">
             <button id="mobile-menu-toggle">&#9776;</button>
         </div>
-        <nav class="menu">
+        <nav class="menu hidden">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html">Tipos de Alojamiento</a></li>
@@ -58,5 +58,16 @@
         <img src="img/logoescrito-removebg-preview.png" alt="Logo escrito">
         <p>&copy; TravelStay Todos los derechos Reservados ©</p>
     </footer>
+    <script>
+        // Aquí coloca el JavaScript que proporcioné en la respuesta anterior
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const menu = document.querySelector('.menu');
+    
+            mobileMenuToggle.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+</script>
 </body>
 </html>
