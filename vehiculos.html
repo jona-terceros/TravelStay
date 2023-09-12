@@ -7,20 +7,33 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Pagina Producto</title>
-		<link rel="stylesheet" href="styles.css" />
+		<title>Alquiler Vehiculos</title>
+		<link rel="stylesheet" href="style4.css" />
+		<link rel="icon" href="img/logo_pag.png">
 	</head>
 	<body>
 		<header>
-			<h1>Logo</h1>
+			<img src="img/logo.png" alt="Logo">
+			<div class="mobile-menu">
+				<button id="mobile-menu-toggle">&#9776;</button>
+			</div>
+			<nav class="menu hidden">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="index.html">Tipos de Alojamiento</a></li>
+					<li><a href="index.html">Destinos</a></li>
+					<li><a href="index.html">Vehículos</a></li>
+					<li><a href="avisos.html">Avisos legales</a></li>
+				</ul>
+			</nav>
 		</header>
 
-		<div class="container-title">Zapatos</div>
+		<div class="container-title">Alquiler de Vehiculos TravelStay</div>
 
 		<main>
 			<div class="container-img">
 				<img
-					src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+					src="img/mini.webp"
 					alt="imagen-producto"
 				/>
 			</div>
@@ -39,22 +52,21 @@
 							</option>
 							<option value="rojo">Rojo</option>
 							<option value="blanco">Blanco</option>
-							<option value="beige">Beige</option>
+							<option value="beige">Negro</option>
 						</select>
 					</div>
 					<div class="form-group">
-						<label for="size">Talla</label>
+						<label for="size">Dias</label>
 						<select name="size" id="size">
 							<option disabled selected value="">
 								Escoge una opción
 							</option>
-							<option value="40">40</option>
-							<option value="42">42</option>
-							<option value="43">43</option>
-							<option value="44">44</option>
+							<option value="40">1</option>
+							<option value="42">2</option>
+							<option value="43">3</option>
+							<option value="44">7</option>
 						</select>
 					</div>
-					<button class="btn-clean">Limpiar</button>
 				</div>
 
 				<div class="container-add-cart">
@@ -73,7 +85,7 @@
 					</div>
 					<button class="btn-add-to-cart">
 						<i class="fa-solid fa-plus"></i>
-						Añadir al carrito
+						Alquilar ya!
 					</button>
 				</div>
 
@@ -83,6 +95,7 @@
 						<i class="fa-solid fa-chevron-down"></i>
 					</div>
 					<div class="text-description">
+						<p>MINI COOPER</p>
 						<p>
 							Lorem ipsum dolor, sit amet consectetur adipisicing
 							elit. Laboriosam iure provident atque voluptatibus
@@ -131,34 +144,53 @@
 		</main>
 
 		<section class="container-related-products">
-			<h2>Productos Relacionados</h2>
+			<h2>Vehiculos Relacionados</h2>
 			<div class="card-list-products">
 				<div class="card">
 					<div class="card-img">
+						<a href="vehiculo5.html" target="_blank"> 
 						<img
-							src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+							src="img/Toyota RAV4 PHEV 007_wqi243.webp"
 							alt="producto-1"
 						/>
+						</a>
 					</div>
 					<div class="info-card">
 						<div class="text-product">
-							<h3>Nike - Roshe Run</h3>
-							<p class="category">Footwear, Sneakers</p>
+							<h3>TOYOTA RAV4</h3>
+							<p class="category">Toyota</p>
 						</div>
-						<div class="price">$85.00</div>
+						<div class="price">$205.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<a href="vehiculo4.html" target="_blank"> 
+						<img
+							src="img/tucson.jpg"
+							alt="producto-2"
+						/>
+						</a>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Hyundai Tucson</h3>
+							<p class="category">Hyundai</p>
+						</div>
+						<div class="price">$150.00</div>
 					</div>
 				</div>
 				<div class="card">
 					<div class="card-img">
 						<img
-							src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80"
-							alt="producto-2"
+							src="img/mazdacx30.jpg"
+							alt="producto-3"
 						/>
 					</div>
 					<div class="info-card">
 						<div class="text-product">
-							<h3>Common Projects Achilles</h3>
-							<p class="category">Footwear, Sneakers</p>
+							<h3>Mazda CX-30</h3>
+							<p class="category">Mazda</p>
 						</div>
 						<div class="price">$255.00</div>
 					</div>
@@ -166,44 +198,39 @@
 				<div class="card">
 					<div class="card-img">
 						<img
-							src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-							alt="producto-3"
-						/>
-					</div>
-					<div class="info-card">
-						<div class="text-product">
-							<h3>Adidas - Boston Super OG</h3>
-							<p class="category">Footwear, Sneakers</p>
-						</div>
-						<div class="price">$105.00</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-img">
-						<img
-							src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+							src="img/celica.jpg"
 							alt="producto-4"
 						/>
 					</div>
 					<div class="info-card">
 						<div class="text-product">
-							<h3>Common Projects Achilles</h3>
-							<p class="category">Footwear, Sneakers</p>
+							<h3>Toyota Celica</h3>
+							<p class="category">Toyota</p>
 						</div>
-						<div class="price">$250.00</div>
+						<div class="price">$60.00</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<footer>
-			<p>Footer</p>
+	    <footer>
+			<img src="img/logoescrito-removebg-preview.png" alt="Logo escrito">
+			<p>&copy; TravelStay Todos los derechos Reservados ©</p>
 		</footer>
 
 		<script
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="index.js"></script>
+		<script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.querySelector('.menu');
+        
+                mobileMenuToggle.addEventListener('click', function () {
+                    menu.classList.toggle('hidden');
+                });
+            });
+    </script>
 	</body>
 </html>

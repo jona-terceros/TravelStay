@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Alquiler Vehiculos</title>
+		<link rel="stylesheet" href="style4.css" />
+        <link rel="icon" href="img/logo_pag.png">
+	</head>
+	<body>
+		<header>
+			<img src="img/logo.png" alt="Logo">
+			<div class="mobile-menu">
+				<button id="mobile-menu-toggle">&#9776;</button>
+			</div>
+			<nav class="menu hidden">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="index.html">Tipos de Alojamiento</a></li>
+					<li><a href="index.html">Destinos</a></li>
+					<li><a href="index.html">Vehículos</a></li>
+					<li><a href="avisos.html">Avisos legales</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container-title">Alquiler de Vehiculos TravelStay</div>
+
+		<main>
+			<div class="container-img">
+				<img
+					src="img/celerio.jpg"
+					alt="imagen-producto"
+				/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$65.00</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-details-product">
+					<div class="form-group">
+						<label for="colour">Color</label>
+						<select name="colour" id="colour">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="rojo">Rojo</option>
+							<option value="blanco">Blanco</option>
+							<option value="beige">Negro</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="size">Dias</label>
+						<select name="size" id="size">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="40">1</option>
+							<option value="42">2</option>
+							<option value="43">3</option>
+							<option value="44">7</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Alquilar ya!
+					</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>SUZUKI CELERIO</p>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Laboriosam iure provident atque voluptatibus
+							reiciendis quae rerum, maxime placeat enim cupiditate
+							voluptatum, temporibus quis iusto. Enim eum qui delectus
+							deleniti similique? Lorem, ipsum dolor sit amet
+							consectetur adipisicing elit. Sint autem magni earum est
+							dolorem saepe perferendis repellat ipsam laudantium cum
+							assumenda quidem quam, vero similique? Iusto officiis
+							quod blanditiis iste?
+						</p>
+					</div>
+				</div>
+
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-social">
+					<span>Compartir</span>
+					<div class="container-buttons-social">
+						<a href="#"><i class="fa-solid fa-envelope"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+        <section class="container-related-products">
+			<h2>Vehiculos Relacionados</h2>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<a href="vehiculo5.html" target="_blank"> 
+						<img
+							src="img/Toyota RAV4 PHEV 007_wqi243.webp"
+							alt="producto-1"
+						/>
+						</a>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>TOYOTA RAV4</h3>
+							<p class="category">Toyota</p>
+						</div>
+						<div class="price">$205.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<a href="vehiculo4.html" target="_blank"> 
+						<img
+							src="img/tucson.jpg"
+							alt="producto-2"
+						/>
+						</a>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Hyundai Tucson</h3>
+							<p class="category">Hyundai</p>
+						</div>
+						<div class="price">$150.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="img/mazdacx30.jpg"
+							alt="producto-3"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Mazda CX-30</h3>
+							<p class="category">Mazda</p>
+						</div>
+						<div class="price">$255.00</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="img/celica.jpg"
+							alt="producto-4"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+							<h3>Toyota Celica</h3>
+							<p class="category">Toyota</p>
+						</div>
+						<div class="price">$60.00</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	    <footer>
+			<img src="img/logoescrito-removebg-preview.png" alt="Logo escrito">
+			<p>&copy; TravelStay Todos los derechos Reservados ©</p>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.querySelector('.menu');
+        
+                mobileMenuToggle.addEventListener('click', function () {
+                    menu.classList.toggle('hidden');
+                });
+            });
+    </script>
+	</body>
+</html>
