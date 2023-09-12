@@ -189,7 +189,7 @@ header nav ul li a:hover {
         text-align: center; /* Alineación del texto en el centro */
         position: fixed; /* Fija el encabezado en la parte superior */
         width: 100%;
-        height: 25px;
+        height: 55px;
         transition: background-color 0.3s; /* Transición suave para el fondo */
         z-index: 1000; /* Asegura que el encabezado esté en la parte superior */
         display: flex;
@@ -201,11 +201,14 @@ header nav ul li a:hover {
         max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
         max-height: 100%; /* La imagen se ajustará al alto del contenedor */
         width: 90px; /* Anula el ancho fijo para permitir la adaptación */
+        margin-top: 5px;
         height: 80px; /* Anula la altura fija para permitir la adaptación */
     }
   
     .menu {
         position: relative;
+        margin-top: 30px;
+    
         
     }
     
@@ -252,6 +255,48 @@ header nav ul li a:hover {
     .vuelo{
         width: 200px;
     }
+    .fondo {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        position: relative; 
+        z-index: -1; /* Asegura que el fondo esté detrás del título */
+
+    }
+    .fondo::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0px;
+        height: 20%; /* Ajusta la altura de la superposición según tus necesidades */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white); /* Gradiente lineal de transparente a blanco */
+        pointer-events: none; /* Evita que la superposición sea interactiva */
+        z-index: 1; /* Coloca el efecto de superposición detrás del fondo */
+      }
+    
+    .fondo img {
+        width: 100%;
+        height: 500px;
+        
+    
+    }
+    .seccion-titulo {
+        font-size: 36px;
+        color: white   ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        /* Elimina o ajusta el margen superior según tus necesidades */
+        margin-top: -310px; /* Por ejemplo, puedes usar un valor positivo */
+        margin-bottom: 150px;
+        z-index: 2; /* Asegura que el título esté delante del fondo */
+
+    }
+    .hotel-container {
+        margin-top: -50px;
+    }
+    
 
 }
 /* Estilos para el menú en dispositivos de escritorio */
