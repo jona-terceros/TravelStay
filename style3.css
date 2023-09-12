@@ -164,38 +164,39 @@ header nav ul li a:hover {
         height: 80px; /* Anula la altura fija para permitir la adaptación */
     }
   
+    .menu {
+        position: relative;
+        
+    }
+    
     .menu ul {
-        background-color:rgba(0, 0, 0, 0.2) ;
+        background-color: rgba(0, 0, 0, 0.2);
         margin-top: 230px;
         list-style: none;
         padding: 0;
         text-align: center;
-        margin-left: -60px;
-        width: 200px;
-      
+        margin-left: -160px;
     }
     
     .menu li {
         display: block;
-        margin: 10px 0; /* Espacio vertical entre elementos */
-        
+        margin: 10px 0;
     }
     
     .menu a {
         text-decoration: none;
         color: white;
         font-size: 15px;
-
     }
+    
     .hidden {
         display: none;
     }
+    
     .mobile-menu {
-        display: flex;
-        justify-content: flex-end; /* Esto alinea el contenido a la derecha */
-        align-items: center; /* Esto alinea el contenido verticalmente al centro */
+        height: 20px;
+        width: 100px;
     }
-      
     
     #mobile-menu-toggle {
         background: none;
@@ -204,11 +205,9 @@ header nav ul li a:hover {
         color: #fff;
         cursor: pointer;
         padding: 0;
-        display: block;
-        margin-left: auto; /* Mueve el botón a la derecha */
+        display: relative;
+        margin-right: -250px;
     }
-    
-    
     
     .vuelo{
         width: 200px;
